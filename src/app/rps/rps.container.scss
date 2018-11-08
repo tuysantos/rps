@@ -1,0 +1,49 @@
+
+.rps-css {
+    color: #000;
+
+    .rps-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .intro-wrapper {
+        text-align: center;
+        padding: 10px;
+        text-align: -webkit-center;
+
+        img, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        a {
+            float: right;
+            display: block;
+        }
+
+        .play-mode {
+            margin-bottom: 10px;
+        }
+    }
+
+    .fomatted {
+        width: 100px;
+    }
+
+    .end-fomatted {
+        clear: both;
+        width: 100px;
+        display: inline-block;
+    }
+
+    .play-again-fomatted {
+        width: 100px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    .btn-format {
+        text-align: -webkit-center;
+    }
+}

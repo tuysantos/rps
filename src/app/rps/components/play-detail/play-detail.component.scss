@@ -1,0 +1,78 @@
+.play-detail {
+    .fieldset-shape-detail {
+        width: auto;
+        border: solid;
+        padding: 15px;
+        border-radius: 5px;
+        color: #20c997;
+        text-align: center;
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        legend {
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .legend-format {
+        display: inline-block;
+        width: auto;
+        padding-right: 15px;
+    }
+
+    .fieldset-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin-left: 10px;
+        display: inline;
+    }
+
+    .img-format {
+        text-align: -webkit-center;
+        img {
+            display: block;
+        }
+
+        .img-format-nested{
+            display: block;
+            margin-bottom: 5px;
+            img, span{
+                display: inline-block;
+            }
+
+            span {
+                margin-right: 10px;
+                font-weight: 700;
+                color: #000;
+            }
+        }
+    }
+
+    .game-result {
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .wrong{
+        color: #dc3545;
+    }
+
+    .correct{
+        color: #28a745;
+    }
+
+    .fair{
+        color: #007bff;
+    }
+
+    .big-message{
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}

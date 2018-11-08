@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row play-detail">
+      <fieldset class="fieldset-shape-detail">
+          <legend class=""><span class="">Game Result</span></legend>
+          <div class="row">
+            <div class="col-sm-12 big-message" [ngClass]="{'wrong' : gameResult == 2, 'correct' : gameResult == 1, 'fair' : gameResult == 0}">
+                {{messageBigResult}}
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12 col-md-4 img-format">
+                  <div class="img-format-nested">
+                      <span>You Played </span>
+                      <img src="{{yourIcon}}">
+                    </div>
+                  <img id="imgDetailUser" src="{{yourImg}}" class="img-thumbnail">
+              </div>
+              <div class="col-sm-12 col-md-4 img-format">
+                <span class="game-result" [ngClass]="{'wrong' : gameResult == 2, 'correct' : gameResult == 1, 'fair' : gameResult == 0}"> {{messageResult}}</span>
+              </div>
+              <div class="col-sm-12 col-md-4 img-format">
+                  <div class="img-format-nested">
+                    <span>PC Played </span>
+                    <img src="{{pcIcon}}">
+                  </div>
+                  <img id="imgDetailPc" src="{{pcImg}}" class="img-thumbnail">
+              </div>
+          </div>
+          
+      </fieldset>
+
+  </div>
+
+</div>

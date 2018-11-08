@@ -1,0 +1,53 @@
+<div class="container rps-css">
+    <div class="row">
+        <div class="col-sm-12 rps-title"><h2 id="h2Title">{{welcomeMessage}}</h2></div>
+    </div>
+    <div class="row" *ngIf="showIntro">
+        <div class="col-sm-12">
+            <div class="intro-wrapper">
+                <img src="../../../../assets/images/game.jpg">
+                <div class="play-mode">
+                    Selected Mode <select id="lstMode" class="dropdown" ng-model="playMode" (change)="setPlayMode($event.target.value)">
+                            <option *ngFor="let mode of playModes" value={{mode}}>
+                                    {{mode}}
+                                </option>
+                    </select>
+                    
+                </div>
+                <button id="btnPlay" type="button" class="btn btn-primary fomatted" (click)="letsPay()">Play</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="!showIntro">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12 rps-title"><h3>Mode: {{playMode}}</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <game-score [newScore]="newResult"></game-score>
+                </div>
+            </div>
+            <div *ngIf="!playNewGame" class="row">
+                <div class="col-sm-12">
+                    <app-play-detail *ngIf="result"
+                        [gameResult]="result.score" 
+                        [userMove]="result.userMove" 
+                        [pcMove]="result.pcMove">
+                    </app-play-detail>
+                </div>
+            </div>
+            <div *ngIf="playNewGame" class="row">
+                <div class="col-sm-12">
+                    <user-action (playEvent)="playGame($event)"></user-action>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 btn-format">
+                    <button id="btnPlayAgain" *ngIf="!playNewGame" type="button" class="btn btn-primary play-again-fomatted" (click)="playAgain()">Play Again</button>
+                    <button id="btnEndGame" type="button" class="btn btn-secondary end-fomatted" (click)="endGame()">End Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

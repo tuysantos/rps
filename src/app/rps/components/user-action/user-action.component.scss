@@ -1,0 +1,40 @@
+
+.user-action {
+
+    img {
+        cursor: pointer;
+    }
+
+    img:hover {
+        border-color: #000;
+    }
+
+    .fieldset-shape {
+        width: auto;
+        border: solid;
+        padding: 15px;
+        border-radius: 5px;
+        color: #20c997;
+        text-align: center;
+        margin: 20px;
+    }
+    .fieldset-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin-left: 10px;
+        display: inline;
+    }
+
+    .legend-format {
+        display: inline-block;
+        width: auto;
+        padding-right: 15px;
+    }
+
+    div {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+}
