@@ -12,7 +12,7 @@ In the basic mode the computer will randomly choose a move. Winning or loosing i
 
 b) Advansed Mode
 
-In the advanced mode the computer will look for your las ‘X’ moves (configurable) to decide its next move. Its move is base in statistics where the move less used it will be, for the computer, your next move!
+In the advanced mode the computer will look for your last ‘X’ moves (configurable) to decide its next move. Its move is base in statistics where the move less used it will be, for the computer, your next move!
 
 ## Development server
 
