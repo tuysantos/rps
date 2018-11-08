@@ -2,7 +2,8 @@
 Rock, Paper and Scissor
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
-#Game Mode
+##Game Mode
+
 This game as 2 mode:
 
 a) Basic Mode
